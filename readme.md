@@ -1,14 +1,14 @@
-# pc version 0.7.2
+# apple.py version 0.1.0
 
 ---
 
-## pre-commit repo automation for macOS
+## repo automation for macOS
 
 ```bash
 
 
 ###############################################################################
-# pc : pre-commit repo automation for macOS (version 0.7.2)
+# apple.py : repo automation for macOS (version 0.1.0)
 
 # author    - Michael Treanor  <skeptycal@gmail.com>
 # copyright - 2019 (c) Michael Treanor
