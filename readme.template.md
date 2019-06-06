@@ -1,6 +1,12 @@
+# pc version 0.7.2
 
+## pre-commit automation for macOS
+
+---
+
+```bash
 ###############################################################################
-# pc : pre-commit repo automation for macOS (version 0.7.2)
+# pc : pre-commit automation for macOS (version 0.7.2)
 
 # author    - Michael Treanor  <skeptycal@gmail.com>
 # copyright - 2019 (c) Michael Treanor
@@ -11,7 +17,6 @@
 
 #   Parameters:
 #       init, -i, --init        -- install and initialize
-#       reset, -r, --reset      -- reset initial repo files (with backup)
 #       version, -v, --version  -- display version information
 #       help, -h, --help        -- display usage and information
 
@@ -36,34 +41,4 @@
 #   the correct, current versioning from git (master sha) so changes to the
 #   commit file will be overwritten when updating.
 ###############################################################################
-
-
-# Sample yaml template ########################################################
-default_language_version:
-    python: python3.7
-default_stages: [commit, push]
-exclude: '^$'
-fail_fast: false
-repos:
--   repo: git://github.com/pre-commit/pre-commit-hooks
-    rev: v2.2.3
-    hooks:
-    -   id: check-added-large-files
-    -   id: check-byte-order-marker
-    -   id: check-docstring-first
-    -   id: check-case-conflict
-    -   id: check-json
-    -   id: check-merge-conflict
-    -   id: check-symlinks
-    -   id: check-yaml
-#   -   id: detect-aws-credentials
-    -   id: detect-private-key
-    -   id: end-of-file-fixer
-    -   id: flake8
-    -   id: pretty-format-json
-    -   id: requirements-txt-fixer
-    -   id: trailing-whitespace
--   repo: git://github.com/pre-commit/mirrors-pylint
-    rev: v2.3.1
-    hooks:
-    -   id: pylint
+```
