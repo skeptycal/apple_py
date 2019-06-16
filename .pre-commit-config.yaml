@@ -46,7 +46,7 @@ exclude: '^$'
 fail_fast: false
 repos:
 -   repo: git://github.com/pre-commit/pre-commit-hooks
-    rev: v2.2.3
+    rev: 9ce6b9facb1a8b392c7fd2e89d6f89a661a41d83
     hooks:
     -   id: check-added-large-files
     -   id: check-byte-order-marker
