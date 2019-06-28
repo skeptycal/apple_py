@@ -5,8 +5,13 @@ verify_ssl = true
 
 [dev-packages]
 pylint = "*"
+pytest = "*"
 
 [packages]
+pandas = "*"
+numpy = "*"
+bs4 = "*"
+BeautifulSoup = "*"
 
 [requires]
 python_version = "3.7"
