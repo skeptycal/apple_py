@@ -1,4 +1,3 @@
-
 ###############################################################################
 # pc : pre-commit repo automation for macOS (version 0.7.2)
 
@@ -23,7 +22,6 @@
 #       and updated to current master sha from GitHub
 ###############################################################################
 
-
 # Run this script if changes to the pre-commit or yaml configuration are added.
 
 # Please make changes directly to the 'template' file:
@@ -37,32 +35,31 @@
 #   commit file will be overwritten when updating.
 ###############################################################################
 
-
 # Sample yaml template ########################################################
 default_language_version:
-    python: python3.7
+  python: python3.7
 default_stages: [commit, push]
-exclude: '^$'
+exclude: "^$"
 fail_fast: false
 repos:
--   repo: git://github.com/pre-commit/pre-commit-hooks
+  - repo: git://github.com/pre-commit/pre-commit-hooks
     rev: 9ce6b9facb1a8b392c7fd2e89d6f89a661a41d83
     hooks:
-    -   id: check-added-large-files
-    -   id: check-byte-order-marker
-    # -   id: check-docstring-first
-    -   id: check-case-conflict
-    -   id: check-json
-    -   id: check-merge-conflict
-    -   id: check-symlinks
-    -   id: check-yaml
-#   -   id: detect-aws-credentials
-    -   id: detect-private-key
-    -   id: end-of-file-fixer
-    # -   id: flake8
-    # -   id: pretty-format-json
-    -   id: requirements-txt-fixer
-    -   id: trailing-whitespace
+      - id: check-added-large-files
+      - id: check-byte-order-marker
+      # -   id: check-docstring-first
+      - id: check-case-conflict
+      - id: check-json
+      - id: check-merge-conflict
+      - id: check-symlinks
+      - id: check-yaml
+      #   -   id: detect-aws-credentials
+      - id: detect-private-key
+      - id: end-of-file-fixer
+      # -   id: flake8
+      # -   id: pretty-format-json
+      - id: requirements-txt-fixer
+      - id: trailing-whitespace
 # -   repo: git://github.com/pre-commit/mirrors-pylint
 #     sha: master
 #     hooks:
