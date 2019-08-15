@@ -12,11 +12,12 @@ import subprocess
 import sys
 from collections import Counter
 from pathlib import Path  # requires python >= 3.4
-from typing import Dict, List, Any, Tuple
+from typing import Any, Dict, List, Tuple
+
+import requests
 
 import numpy as np
 import pandas as pd
-import requests
 
 try:
     from BeautifulSoup import BeautifulSoup
