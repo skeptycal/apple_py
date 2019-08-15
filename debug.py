@@ -15,9 +15,10 @@ from collections import Counter
 from pathlib import Path  # requires python >= 3.4
 from typing import Any, Dict, List, Tuple  # requires python >= 3.6
 
+import requests
+
 import numpy as np
 import pandas as pd
-import requests
 
 
 class PyCrust():
